@@ -1,0 +1,203 @@
+<html>
+<head>
+  <title>trishitdedhia.com</title>
+  <style>
+    body, html{
+      padding: 0;
+      margin: 0;
+      background-color: rgb(20, 20, 20);
+      scroll-behavior: smooth;
+      pointer-events: all;
+    }
+    #canvas{
+      z-index: 5;
+      position: fixed;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+    }
+    #transition{
+      z-index: 7;
+      position: fixed;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+    }
+    #heading{
+      animation: colourSwitch 10s;
+      animation-iteration-count: infinite;
+      margin-top: 12%;
+      font-family: 'Barlow', sans-serif;
+      font-size: 70px;
+
+    }
+    #scroll_indicator{
+      width: 5%;
+      margin-top: 5%;
+    }
+    #scroll_indicator2{
+      width: 5%;
+      margin-top: 5%;
+    }
+    #sub-heading{
+      color: white;
+      font-family: 'Barlow', sans-serif;
+      font-size: 25px;
+      margin-top: -40px;
+    }
+    #spacer1{
+      width: 100%;
+      height: 220px;
+    }
+    #spacer2{
+      width: 100%;
+      height: 80px;
+    }
+    #heading2{
+      color: white;
+      font-family: 'Barlow', sans-serif;
+      font-size: 40px;
+    }
+    .projectbox{
+      padding: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 40px;
+      border-radius: 8px;
+    }
+    .projectcenter{
+      padding: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 40px;
+      border-radius: 8px;
+    }
+    td{
+      padding: 5px;
+    }
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    .projectbox:hover{
+      opacity: 0.5;
+    }
+    @keyframes colourSwitch {
+      0%  {color: #39CCCC}
+      20% {color: #00A86B}
+      40% {color: #FF851B}
+      60% {color: #01FF70}
+      80% {color: #F67280}
+      100%{color: orange}
+    }
+    #moreMain{
+      width: 100%;
+      height: 300px;
+      z-index: 0;
+      background: none;
+      position: absolute;
+    }
+    #moreDrop{
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      left: 0;
+    }
+    #moreTitle{
+      font-family: 'Barlow', sans-serif;
+      color: rgba(20, 20, 20, 1);
+      font-size: 50px;
+    }
+    .card{
+      font-family: 'Barlow', sans-serif;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 40px;
+      display: inline-block;
+      padding: 30px;
+      max-width: 25%;
+      border-radius: 18px;
+      margin: 15px;
+    }
+    .card:hover{
+      background-color: rgba(15, 15, 15, 1) !important;
+      color: white;
+    }
+
+    </style>
+</head>
+<body id="body">
+  <center>
+  <h1 id="heading">Hi There!</h1>
+  <h1 id="sub-heading">Trishit here, I'm just a 12th grade IB student who<br>loves technology and enjoys working on projects! </h1>
+  <img id="scroll_indicator" src="Images/indicator.png"/>
+  <div id="spacer1"></div>
+  <!--Projects -->
+  <table>
+    <tr>
+      <td><div onclick='transition("#FFDC00", "Projects/BirdSense.html", event)' style="background-color: #FFDC00;" class="projectbox">Bird Sense</div></td>
+      <td><div onclick='transition("#E93B81", "Projects/swift.html", event)' style="background-color: #E93B81;" class="projectbox">Swift</div></a></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td><div onclick='transition("#F67280", "Projects/hydroponics.html", event)' style="background-color: #F67280;" class="projectbox">Hydroponics Animated Video</div></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td><div onclick='transition("#FF4136", "Projects/CrackBox.html", event)' style="background-color: #FF4136;" class="projectbox">CrackBox</div></td>
+      <td><div onclick='transition("#7C83FD", "Projects/CrackBoxPlus.html", event)' style="background-color: #7C83FD;" class="projectbox">CrackBox Plus</div></td>
+      <td><a href="Projects/LSI30.html"><div style="background-color: #39CCCC;" class="projectbox">LSI30</div></a></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td><div onclick='transition("#FF851B", "Projects/classroom.html", event)' style="background-color: #FF851B;" class="projectbox">Classroom+</div></a></td>
+      <td><div style="color: white;" class="projectcenter">My Projects</div></td>
+      <td><div onclick='transition("#F67280", "Projects/tdartistco.html", event)' style="background-color: #F67280;" class="projectbox">tdartistico</div></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td><div onclick='transition("#7C83FD", "Projects/tbremastered.html", event)' style="background-color: #7C83FD;" class="projectbox">Textbooks Remastered</div></td>
+      <td><div onclick='transition("#FF4136", "Projects/VerboPro.html", event)' style="background-color: #FF4136;" class="projectbox">VerboPro</div></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td><div onclick='transition("rgb(15, 15, 15)", "uc.html", event)' style="background-color: #01FF70;" class="projectbox">Fererro</div></td>
+      <td><div onclick='transition("#00A86B", "Projects/tgotn.html", event)' style="background-color: #00A86B;" class="projectbox">The Gift Of The Nile</div></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td><div  onclick='transition("#0074D9", "Projects/ar.html", event)' style="background-color: #0074D9;" class="projectbox">AR+</div></td>
+      <td><div onclick='transition("#01FF70", "Projects/dgdc.html", event)' style="background-color: #01FF70;" class="projectbox">DGDC 2020</div></td>
+    </tr>
+  </table>
+  <!---->
+  <img id="scroll_indicator2" src="Images/indicator.png"/>
+
+  <canvas id="moreDrop"></canvas>
+  <div id="moreMain">
+    <div id="spacer2"></div>
+      <h1 id="moreTitle">There's <br>More To See...</h1>
+      <!--cards-->
+      <div class="card" onclick="transition('rgb(15, 15, 15)', 'uc.html', event)" id="me" style="background-color: #F67280;">About<br>Me</div>
+      <div class="card" onclick="transition('rgb(15, 15, 15)', 'uc.html', event)" id="tools" style="background-color: #39CCCC;">Tools &<br>Resources</div>
+      <div class="card" onclick="transition('rgb(15, 15, 15)', 'uc.html', event)" id="contact" style="background-color: #0074D9;">Contact<br>Me</div>
+    </div>
+
+  <canvas id="canvas"></canvas>
+  <canvas id="transition"></canvas>
+  <script src="Scripts/moreDrop.js"></script>
+  <script src="Scripts/header.js"></script>
+  <script src="Scripts/transition.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+
+</body>
+</html>
